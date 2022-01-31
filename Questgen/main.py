@@ -17,9 +17,9 @@ import pke
 import nltk
 import numpy 
 from nltk import FreqDist
-nltk.download('brown')
-nltk.download('stopwords')
-nltk.download('popular')
+nltk.download('brown',download_dir='nltk_data/')
+nltk.download('stopwords',download_dir='nltk_data/')
+nltk.download('popular',download_dir='nltk_data/')
 from nltk.corpus import stopwords
 from nltk.corpus import brown
 from similarity.normalized_levenshtein import NormalizedLevenshtein

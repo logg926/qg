@@ -10,7 +10,7 @@ from itertools import chain
 from string import punctuation
 
 import nltk
-nltk.download('punkt')
+nltk.download('punkt',download_dir='nltk_data/')
 from nltk.tokenize import sent_tokenize
 
 import pandas as pd
