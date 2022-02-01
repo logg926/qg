@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(name='packagedquestgenforlambda',
-      version='1.0.2',
+      version='1.0.3',
       description='Question generator from any text',
       author='packagedquestgenforlambda contributors',
       author_email='vaibhavtiwarifu@gmail.com',
