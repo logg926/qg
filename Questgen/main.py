@@ -197,8 +197,8 @@ class QGen:
 class BoolQGen:
        
     def __init__(self):
-        self.tokenizer = T5Tokenizer.from_pretrained('t5-base')
-        model = T5ForConditionalGeneration.from_pretrained('ramsrigouthamg/t5_boolean_questions')
+        self.tokenizer = T5Tokenizer.from_pretrained('transformers/t5-base')
+        model = T5ForConditionalGeneration.from_pretrained('transformers/t5_boolean_questions')
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         model.to(device)
         # model.eval()
@@ -249,8 +249,8 @@ class BoolQGen:
 class AnswerPredictor:
           
     def __init__(self):
-        self.tokenizer = T5Tokenizer.from_pretrained('t5-base')
-        model = T5ForConditionalGeneration.from_pretrained('Parth/boolean')
+        self.tokenizer = T5Tokenizer.from_pretrained('transformers/t5-base')
+        model = T5ForConditionalGeneration.from_pretrained('transformers/Parth/boolean')
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         model.to(device)
         # model.eval()
