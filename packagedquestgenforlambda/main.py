@@ -25,12 +25,12 @@ from nltk.corpus import brown
 from similarity.normalized_levenshtein import NormalizedLevenshtein
 from nltk.tokenize import sent_tokenize
 from flashtext import KeywordProcessor
-from Questgen.encoding.encoding import beam_search_decoding
-from Questgen.mcq.mcq import tokenize_sentences
-from Questgen.mcq.mcq import get_keywords
-from Questgen.mcq.mcq import get_sentences_for_keyword
-from Questgen.mcq.mcq import generate_questions_mcq
-from Questgen.mcq.mcq import generate_normal_questions
+from packagedquestgenforlambda.encoding.encoding import beam_search_decoding
+from packagedquestgenforlambda.mcq.mcq import tokenize_sentences
+from packagedquestgenforlambda.mcq.mcq import get_keywords
+from packagedquestgenforlambda.mcq.mcq import get_sentences_for_keyword
+from packagedquestgenforlambda.mcq.mcq import generate_questions_mcq
+from packagedquestgenforlambda.mcq.mcq import generate_normal_questions
 import time
 
 class QGen:

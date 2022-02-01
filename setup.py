@@ -1,12 +1,12 @@
 from distutils.core import setup
 
-setup(name='Questgen',
+setup(name='packagedquestgenforlambda',
       version='1.0.0',
       description='Question generator from any text',
-      author='Questgen contributors',
+      author='packagedquestgenforlambda contributors',
       author_email='vaibhavtiwarifu@gmail.com',
-      packages=['Questgen', 'Questgen.encoding', 'Questgen.mcq'],
-      url="https://github.com/ramsrigouthamg/Questgen.ai",
+      packages=['packagedquestgenforlambda', 'packagedquestgenforlambda.encoding', 'packagedquestgenforlambda.mcq'],
+      url="https://github.com/ramsrigouthamg/packagedquestgenforlambda.ai",
       install_requires=[
          
            'torch==1.9.0',
@@ -29,5 +29,5 @@ setup(name='Questgen',
            'flashtext==2.7',
            'pandas'
       ],
-      package_data={'Questgen': ['questgen.py', 'mcq.py', 'train_gpu.py', 'encoding.py']}
+      package_data={'packagedquestgenforlambda': ['packagedquestgenforlambda.py', 'mcq.py', 'train_gpu.py', 'encoding.py']}
       )
