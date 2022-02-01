@@ -13,7 +13,7 @@ from sense2vec import Sense2Vec
 import requests
 from collections import OrderedDict
 import string
-import pkelambda
+import pke
 import nltk
 import numpy 
 from nltk import FreqDist

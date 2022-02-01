@@ -28,7 +28,6 @@ setup(name='packagedquestgenforlambda',
            'boto3==1.14.40',
            'flashtext==2.7',
            'pandas',
-           'pkelambda==1.8.1'
       ],
       package_data={'packagedquestgenforlambda': ['packagedquestgenforlambda.py', 'mcq.py', 'train_gpu.py', 'encoding.py']}
       )
