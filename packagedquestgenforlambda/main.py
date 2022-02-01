@@ -45,7 +45,7 @@ class QGen:
         # model.eval()
         self.device = device
         self.model = model
-        self.nlp = spacy.load('en_core_web_sm')
+        self.nlp = spacy.load('./en_core_web_sm-2.2.5')
 
         self.s2v = Sense2Vec().from_disk('s2v_old')
 
