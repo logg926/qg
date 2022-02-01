@@ -1,7 +1,7 @@
 from distutils.core import setup
 
 setup(name='packagedquestgenforlambda',
-      version='1.0.1',
+      version='1.0.2',
       description='Question generator from any text',
       author='packagedquestgenforlambda contributors',
       author_email='vaibhavtiwarifu@gmail.com',
@@ -27,7 +27,8 @@ setup(name='packagedquestgenforlambda',
            'python-dateutil==2.8.1',
            'boto3==1.14.40',
            'flashtext==2.7',
-           'pandas'
+           'pandas',
+           'pkelambda==1.8.1'
       ],
       package_data={'packagedquestgenforlambda': ['packagedquestgenforlambda.py', 'mcq.py', 'train_gpu.py', 'encoding.py']}
       )
