@@ -13,7 +13,7 @@ from sense2vec import Sense2Vec
 import requests
 from collections import OrderedDict
 import string
-import pke
+import pkelambda
 import nltk
 from nltk import FreqDist
 nltk.download('brown',download_dir='nltk_data/')
@@ -147,7 +147,7 @@ def filter_phrases(phrase_keys,max,normalized_levenshtein ):
 def get_nouns_multipartite(text):
     out = []
 
-    extractor = pke.unsupervised.MultipartiteRank()
+    extractor = pkelambda.unsupervised.MultipartiteRank()
     extractor.load_document(input=text, language='en')
     pos = {'PROPN', 'NOUN'}
     stoplist = list(string.punctuation)
